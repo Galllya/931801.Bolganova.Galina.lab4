@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    background-color: #edeef0;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+#header{
+    background-color: #507299;
+    height: 40px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.img_1{
+    position: relative;
+    left: 20%;
+}
+#container{
+    display: flex;
+    top: 40px;
+    Justify-content: center;
+    padding-top: 40px;
+    
+}
+.borderbox{
+    width: 200px;
+    margin: 10px;
+}
+.main{
+    width: 450px;
+}
+.right{
+    width: 200px;
+    position: fixed;
+    right: 200px;
+    top: 40px;
+}
+.hidden{
+    visibility: hidden;
+    width: 200px;
+}
+.border, .border1{
+    display: block;
+    text-decoration: none;
+    color: #2e5473;
+    margin: 10px;
+}
+a:hover{
+    background: #e1e5eb;
+}
+.one{
+    background-color: white;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #e1e5eb;
+}
+hr{
+    background-color: #d0d0d0;
+    height: 2px; 
+    border: none;
+    margin-top: 0;
+}
+.like, .comment{
+    text-align: left;
+    text-decoration: none;
+    color: #2e5473;
+    
+}
+.comment{
+    float: right;
+    bottom: 0;
+}
+.head{
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.line{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.right_block{
+    background-color: white;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #e1e5eb;
+}
+.right_text{
+    margin: 20px 5px 5px 0px;
+    background-color: #edeef0;
+}
+.right_text_top{
+    margin: 20px 5px 5px 0px;
+    font-weight: bold;
+}
+#footer{
+    background-color: white;
+    color:#d0d0d0;
+    text-align: center;
+    height:auto;
+}
+.img_2{
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.niz{
+
+    text-align: left;
+}
+p::selection{
+    background-color:#edeef0;
+    color: green;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .right{
+        display: none;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .right{
+        display: none;
+    }
+    #container{
+        flex-direction: column;
+        
+    }
+    nav {
+        display: inline-flex;
+        width: 500px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    a {
+        width: 130px;
+    }
+    .border1{
+        width: 200px;
+    }
+}
